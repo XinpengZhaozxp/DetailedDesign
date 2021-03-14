@@ -10,3 +10,6 @@ class HorizontalTail (Tail):
         self.Vh = (self.S_t_total*Tail._lt)
         Tail.info(self)
         print("Horizontal Tail Volume Ratio(bar)", self.Vh_bar,"\n")
+
+    def getTotalArea(self):
+        return self.S_t_total;

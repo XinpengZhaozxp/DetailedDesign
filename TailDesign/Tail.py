@@ -40,3 +40,6 @@ class Tail(object):
 
     def getWingArea(self):
         return Tail._S_w
+
+    def getWingSpan(self):
+        return Tail._b
