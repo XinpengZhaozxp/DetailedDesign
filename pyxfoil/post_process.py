@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.io as scio
 
 def post_process(dpath,savepath,name,re):
     data = np.loadtxt(dpath, skiprows=12)
@@ -23,4 +24,7 @@ def post_process(dpath,savepath,name,re):
                              ('cl_alpha', '<f4'), ('cm_alpha', '<f4'), ('x_ac', '<f4')])
     sp = savepath+'\\'+name+"-Re{0}".format(re)+'.npy'
     np.save(sp, result)
+    spmat = savepath+'\\'+name+"-Re{0}".format(re)+'.mat'
+    matResult = {"Result": result, "Label": "RE:{0}".format(re)}
+    scio.savemat(spmat, matResult)
     return sp

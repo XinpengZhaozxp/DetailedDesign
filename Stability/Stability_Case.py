@@ -1,7 +1,7 @@
 import copy
 import TailDesign.HorizontalTail as ht
 import TailDesign.VerticalTail as vt
-import Tools.Utility as util
+import Utility.Utility_Functions as utilf
 #from Stability.longtunial import longtunial as long
 import numpy as np
 

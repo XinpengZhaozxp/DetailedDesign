@@ -6,7 +6,7 @@ import string
 import time
 
 
-def running(xpath, cwpath, airfoil, Re, a1=-17, a2=17, step=0.5):
+def running(xpath, cwpath, airfoil, Re, a1=-5, a2=5, step=0.25):
     exepath = xpath
 
     def cmd(process,cmd):
