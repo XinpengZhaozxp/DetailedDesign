@@ -9,8 +9,8 @@ import numpy as np
 
 Re = np.linspace(600000, 900000, 6)
 Re = np.around(Re)
-for ele in Re:
-    xfoil_analysis('naca2410', ele)
+
+xfoil_analysis('naca2410', 750000)
 
 
 # xfoil_analysis('e475', 666667)
